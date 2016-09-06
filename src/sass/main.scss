@@ -356,7 +356,7 @@ header {
 .resume-wrapper {
 	clear: both;
 	background-color: $app-font-color;
-	height: 700px;
+	//height: 700px;
 	padding-bottom: 80px;
 	.resume-title span {
 		display: block;
@@ -373,7 +373,7 @@ header {
 		// float: left;
 		display: flex;
 		flex-direction: row;
-		width: 80%;
+		width: 90%;
 		color: $app-font2-color;
 		text-align: justify;
 		margin-left: auto;
@@ -401,7 +401,8 @@ header {
 	}	
 	.experience {
 		// float: right;
-		width: 80%;
+		width: 90%;
+
 		color: $app-font2-color;
 		text-align: justify;
 		margin-left: auto;
@@ -467,6 +468,21 @@ header {
 				}
 				i {
 					margin-right: 2em;
+					&.fa-github {
+						&:hover {
+							color: black;	
+						}
+					}
+					&.fa-linkedin {
+						&:hover {
+							color: #1d87bd;
+						}
+					}
+					&.fa-twitter {
+						&:hover {
+							color: #55acee;
+						}
+					}			
 				}				
 			}
 
