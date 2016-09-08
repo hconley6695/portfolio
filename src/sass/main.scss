@@ -15,6 +15,10 @@ $new-white: #f8f9fe;
 //$new-white: #f6f6f6;
 $new-gray: #676f72;
 
+* {
+	box-sizing: border-box;
+}
+
 body {
 	//background-color: #4a4e45;
 	//background-color: $new-green;
@@ -161,217 +165,292 @@ header {
 	//background-color: $new-green;
 }	
 
+
 .work-wrapper {
 	clear: both;
 	width: 100%;
-	height: 700px;
-	margin-right: auto;
-	margin-left: auto;
+	height: 650px;
 	position: relative;
-	background-color: $new-teal;
-	//background-color: $new-green;
-	color: $new-white;
-	//color: $app-font-color;
-	.milkninja {
-		position: absolute;
-		top: 5px;
-		left: 25px;
-		width: 45%;
-		height: 325px;
-		// border: 1px solid red;
-		.ninja-img {
-			display: inline-block;
-			margin-right: 9em;
+	background-color: $new-teal;	
+	.work-wrapper-top-container {
+		overflow: hidden;
+		display: flex;
+		flex-direction: row;
+		border: 1px solid blue;
+		margin-left: auto;
+		margin-right: auto;
+		justify-content: center;
+		.project {
+			border: 1px solid red;
+			position: relative;
+			margin-bottom: 30px;
+			img {
+				//width: 25%;
+				display: block;
+			}
+		}
+		.selected {
+			display: block;
+		}
+	}
+	
+	.work-wrapper-btm-container {
+		.project-details {
+			width: 90%;
+			display: block;
+			margin: 20px 75px;
+			font-size: 18px;
+			color: $new-white;
+			.title {
+				font-size: 24px;
+			}
+			p { 
+		  		font-size: 18px;
 
-			img {
-				height: 100px;
-				border-radius: 100%;
-			}
-		}
-		.ninja-title {
-			display: inline-block;		
-			span {
-				font-size: 40px;
-			}
-		}
-		.ninja-description {
-		  p { 
-		  	font-size: 18px;
-		  }	
-	  	  ul.links {
-			display: flex;
-			flex-direction: row;
-			padding: 0;
-			li {
-				font-size: 20px;
-				margin-right: 1.5em;
-				list-style: none;
-				// color: black;
-				a {
-					text-decoration: none;
-					color: black;
-					&:hover {
+		  	}	
+		  	ul.links {
+				display: flex;
+				flex-direction: row;
+				padding: 0;
+				li {
+					font-size: 20px;
+					margin-right: 1.5em;
+					list-style: none;
+					a {
+						text-decoration: none;
 						color: $new-white;
-						//color: $app-font-color;	
+						&:hover {
+							color: black;
+						}
 					}
 				}
 			}
-			// .links {
-			// 	display: flex;
-			// 	flex-direction: row;				
-			// 	li {
-			// 		list-style: none;
-			// 		a {
-			// 			text-decoration: none;
-			// 			color: $app-font-color;
-			// 				&:hover {
-			// 					color: black;	
-			// 				}
-			// 		}
-			// }
-		  }
-		}
-	}
-	.wildmild {
-		position: absolute;
-		top: 5px;
-		right: 25px;
-		width: 45%;
-		height: 325px;
-		// border: 1px solid blue;
-		.wildmild-img {
-			display: inline-block;
-			margin-right: 9em;
-			img {
-				width: 100px;
-				border-radius: 100%;
-			}
-		}	
-		.wildmild-title {
-			display: inline-block;
-			span {
-				font-size: 40px;
-			}	
-		}
-		.wildmild-description {
-		  p {
-		  	font-size: 18px;
-		  }	
-	  	  ul.links {
-			display: flex;
-			flex-direction: row;
-			padding: 0;
-			li {
-				font-size: 20px;
-				margin-right: 1.5em;
-				list-style: none;
-				// color: black;
-				a {
-					text-decoration: none;
-					color: black;
-					&:hover {
-						color: $new-white;
-						//color: $app-font-color;	
-					}
-				}
-			}
-		  }
-		}
-	}
-	.restaurant {
-		position: absolute;
-		bottom: 5px;
-		right: 25px;
-		width: 45%;
-		height: 325px;
-		// border: 1px solid green;
-		.restaurant-img {
-			display: inline-block;
-			margin-right: 9em;
-			img {
-				width: 100px;
-				border-radius: 100%;
-			}
-		}	
-		.restaurant-title {
-			display: inline-block;
-			span {
-				font-size: 40px;
-			}
-		}
-		.restaurant-description {
-		  p {
-		  	font-size: 18px;
-		  }	
-	  	  ul.links {
-			display: flex;
-			flex-direction: row;
-			padding: 0;
-			li {
-				font-size: 20px;
-				margin-right: 1.5em;
-				list-style: none;
-				// color: black;
-				a {
-					text-decoration: none;
-					color: black;
-					&:hover {
-						color: $new-white;
-						//color: $app-font-color;	
-					}
-				}
-			}
-		  }
-		}
-	}	
-	.game {
-		position: absolute;
-		bottom: 5px;
-		left: 25px;
-		width: 45%;
-		height: 325px;
-		// border: 1px solid purple;
-		.game-img {
-			display: inline-block;
-			margin-right: 9em;
-			img {
-				width: 100px;
-				border-radius: 100%;
-			}
-		}
-		.game-title {
-			display: inline-block;
-			span {
-				font-size: 40px;
-			}
-		}
-		.game-description {
-		  p {
-		  	font-size: 18px;
-		  }	
-	  	  ul.links {
-			display: flex;
-			flex-direction: row;
-			padding: 0;
-			li {
-				font-size: 20px;
-				margin-right: 1.5em;
-				list-style: none;
-				// color: black;
-				a {
-					text-decoration: none;
-					color: black;
-					&:hover {
-						color: $new-white;
-						//color: $app-font-color;	
-					}
-				}
-			}
-		  }
-		}
-	}
 
+
+		}
+		.wildmild-details {
+			display: none;
+		}
+		.restaurant-details {
+			display: none;
+		}
+		.game-details {
+			display: none;
+		}
+	}
 }
+
+// .work-wrapper {
+// 	clear: both;
+// 	width: 100%;
+// 	height: 700px;
+// 	margin-right: auto;
+// 	margin-left: auto;
+// 	position: relative;
+// 	background-color: $new-teal;
+// 	//background-color: $new-green;
+// 	color: $new-white;
+// 	//color: $app-font-color;
+// 	.milkninja {
+// 		position: absolute;
+// 		top: 5px;
+// 		left: 25px;
+// 		width: 45%;
+// 		height: 325px;
+// 		// border: 1px solid red;
+// 		.ninja-img {
+// 			display: inline-block;
+// 			margin-right: 9em;
+
+// 			img {
+// 				height: 100px;
+// 				border-radius: 100%;
+// 			}
+// 		}
+// 		.ninja-title {
+// 			display: inline-block;		
+// 			span {
+// 				font-size: 40px;
+// 			}
+// 		}
+// 		.ninja-description {
+// 		  p { 
+// 		  	font-size: 18px;
+// 		  }	
+// 	  	  ul.links {
+// 			display: flex;
+// 			flex-direction: row;
+// 			padding: 0;
+// 			li {
+// 				font-size: 20px;
+// 				margin-right: 1.5em;
+// 				list-style: none;
+// 				// color: black;
+// 				a {
+// 					text-decoration: none;
+// 					color: black;
+// 					&:hover {
+// 						color: $new-white;
+// 						//color: $app-font-color;	
+// 					}
+// 				}
+// 			}
+// 			// .links {
+// 			// 	display: flex;
+// 			// 	flex-direction: row;				
+// 			// 	li {
+// 			// 		list-style: none;
+// 			// 		a {
+// 			// 			text-decoration: none;
+// 			// 			color: $app-font-color;
+// 			// 				&:hover {
+// 			// 					color: black;	
+// 			// 				}
+// 			// 		}
+// 			// }
+// 		  }
+// 		}
+// 	}
+// 	.wildmild {
+// 		position: absolute;
+// 		top: 5px;
+// 		right: 25px;
+// 		width: 45%;
+// 		height: 325px;
+// 		// border: 1px solid blue;
+// 		.wildmild-img {
+// 			display: inline-block;
+// 			margin-right: 9em;
+// 			img {
+// 				width: 100px;
+// 				border-radius: 100%;
+// 			}
+// 		}	
+// 		.wildmild-title {
+// 			display: inline-block;
+// 			span {
+// 				font-size: 40px;
+// 			}	
+// 		}
+// 		.wildmild-description {
+// 		  p {
+// 		  	font-size: 18px;
+// 		  }	
+// 	  	  ul.links {
+// 			display: flex;
+// 			flex-direction: row;
+// 			padding: 0;
+// 			li {
+// 				font-size: 20px;
+// 				margin-right: 1.5em;
+// 				list-style: none;
+// 				// color: black;
+// 				a {
+// 					text-decoration: none;
+// 					color: black;
+// 					&:hover {
+// 						color: $new-white;
+// 						//color: $app-font-color;	
+// 					}
+// 				}
+// 			}
+// 		  }
+// 		}
+// 	}
+// 	.restaurant {
+// 		position: absolute;
+// 		bottom: 5px;
+// 		right: 25px;
+// 		width: 45%;
+// 		height: 325px;
+// 		// border: 1px solid green;
+// 		.restaurant-img {
+// 			display: inline-block;
+// 			margin-right: 9em;
+// 			img {
+// 				width: 100px;
+// 				border-radius: 100%;
+// 			}
+// 		}	
+// 		.restaurant-title {
+// 			display: inline-block;
+// 			span {
+// 				font-size: 40px;
+// 			}
+// 		}
+// 		.restaurant-description {
+// 		  p {
+// 		  	font-size: 18px;
+// 		  }	
+// 	  	  ul.links {
+// 			display: flex;
+// 			flex-direction: row;
+// 			padding: 0;
+// 			li {
+// 				font-size: 20px;
+// 				margin-right: 1.5em;
+// 				list-style: none;
+// 				// color: black;
+// 				a {
+// 					text-decoration: none;
+// 					color: black;
+// 					&:hover {
+// 						color: $new-white;
+// 						//color: $app-font-color;	
+// 					}
+// 				}
+// 			}
+// 		  }
+// 		}
+// 	}	
+// 	.game {
+// 		position: absolute;
+// 		bottom: 5px;
+// 		left: 25px;
+// 		width: 45%;
+// 		height: 325px;
+// 		// border: 1px solid purple;
+// 		.game-img {
+// 			display: inline-block;
+// 			margin-right: 9em;
+// 			img {
+// 				width: 100px;
+// 				border-radius: 100%;
+// 			}
+// 		}
+// 		.game-title {
+// 			display: inline-block;
+// 			span {
+// 				font-size: 40px;
+// 			}
+// 		}
+// 		.game-description {
+// 		  p {
+// 		  	font-size: 18px;
+// 		  }	
+// 	  	  ul.links {
+// 			display: flex;
+// 			flex-direction: row;
+// 			padding: 0;
+// 			li {
+// 				font-size: 20px;
+// 				margin-right: 1.5em;
+// 				list-style: none;
+// 				// color: black;
+// 				a {
+// 					text-decoration: none;
+// 					color: black;
+// 					&:hover {
+// 						color: $new-white;
+// 						//color: $app-font-color;	
+// 					}
+// 				}
+// 			}
+// 		  }
+// 		}
+// 	}
+
+// }
 
 .resume-wrapper {
 	clear: both;
