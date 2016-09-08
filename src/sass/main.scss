@@ -55,7 +55,7 @@ header {
 			//color: $app-font-color;
 			&.fa-github {
 				&:hover {
-					color: black;	
+					color: #4078c0;	
 				}
 			}
 			&.fa-linkedin {
@@ -169,19 +169,20 @@ header {
 .work-wrapper {
 	clear: both;
 	width: 100%;
-	height: 650px;
+	height: 680px;
 	position: relative;
 	background-color: $new-teal;	
 	.work-wrapper-top-container {
 		overflow: hidden;
 		display: flex;
 		flex-direction: row;
-		border: 1px solid blue;
+		//border: 1px solid blue;
 		margin-left: auto;
 		margin-right: auto;
 		justify-content: center;
 		.project {
-			border: 1px solid red;
+			padding-left: 10px;
+			padding-right: 10px;
 			position: relative;
 			margin-bottom: 30px;
 			img {
@@ -189,17 +190,19 @@ header {
 				display: block;
 			}
 		}
-		.selected {
-			display: block;
-		}
 	}
 	
 	.work-wrapper-btm-container {
+		position: relative;
 		.project-details {
+			position: absolute;
+			top: 20px;
+			left: 10%;
+			//left: 75px;
 			width: 90%;
 			display: block;
-			margin: 20px 75px;
 			font-size: 18px;
+			// color: red;
 			color: $new-white;
 			.title {
 				font-size: 24px;
@@ -225,21 +228,40 @@ header {
 					}
 				}
 			}
+		
 
 
 		}
-		.wildmild-details {
-			display: none;
-		}
-		.restaurant-details {
-			display: none;
-		}
-		.game-details {
-			display: none;
-		}
+		// .wildmild-details {
+		// 	display: none;
+		// }
+		// .restaurant-details {
+		// 	display: none;
+		// }
+		// .game-details {
+		// 	display: none;
+		// }
 	}
 }
 
+.selected {
+	display: block;
+	height: 100%;
+}
+.unseen {
+	display: none;
+	height: 0;
+	overflow: hidden;
+}
+
+.big {
+	opacity: 1;
+}
+
+.normal {
+	opacity: .75;
+
+}
 // .work-wrapper {
 // 	clear: both;
 // 	width: 100%;
@@ -576,7 +598,7 @@ header {
 					margin-right: 2em;
 					&.fa-github {
 						&:hover {
-							color: black;	
+							color: #4078c0;	
 						}
 					}
 					&.fa-linkedin {
