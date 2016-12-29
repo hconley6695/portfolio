@@ -5,8 +5,12 @@
 @import 'font-awesome/scss/font-awesome';
 @import 'bootstrap/dist/css/bootstrap';
 
-img {
-	max-width: 30%;
+#main-img {
+	max-width: 100%;
+}
+
+#profile-pic {
+	max-width: 25%;
 }
 
 
