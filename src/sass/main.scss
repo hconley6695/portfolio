@@ -55,12 +55,54 @@ hr {
 
 }
 
+p {
+	color: $black-color;
+}
+
 #main-img {
 	max-width: 100%;
 }
 
 #profile-pic {
-	max-width: 25%;
+	max-width: 100%;
+}
+
+section.about-wrapper {
+	padding-bottom: 50px;
+}
+
+.contact-list {
+	ul {
+		padding-left: 0;
+		li {
+			font-size: 16px;
+			color: $black-color;
+			padding-bottom: 1em;
+			list-style-type: none;
+			a {
+				color: $black-color;
+				text-decoration: none;
+			}
+			i {
+				margin-right: 2em;
+				&.fa-github {
+					&:hover {
+						color: #4078c0;	
+					}
+				}
+				&.fa-linkedin {
+					&:hover {
+						color: #1d87bd;
+					}
+				}
+				&.fa-twitter {
+					&:hover {
+						color: #55acee;
+					}
+				}			
+			}				
+		}
+	}	
 }
 
 // .my-work {
