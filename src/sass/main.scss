@@ -44,15 +44,23 @@ h6 {
 
 h4 a {
 	color: $black-color;
+	&:hover {
+		color: $blue-color;
+		text-decoration: none;
+	}
 }
 
 h6 a {
 	color: $black-color;
+	&:hover {
+		color: $blue-color;
+		text-decoration: none;
+	}
 }
 
 hr {
 	color: $black-color;
-
+	border-width: 3px;
 }
 
 p {
@@ -63,12 +71,16 @@ p {
 	max-width: 100%;
 }
 
+.my-work img {
+	padding-left: 5%;
+}
+
 #profile-pic {
-	max-width: 100%;
+	max-width: 90%;
 }
 
 section.about-wrapper {
-	padding-bottom: 50px;
+	padding-bottom: 20px;
 }
 
 .contact-list {
@@ -79,11 +91,17 @@ section.about-wrapper {
 			color: $black-color;
 			padding-bottom: 1em;
 			list-style-type: none;
+			&:nth-child(1) {
+				i {
+					margin-right: 1.8em;
+				}
+			}
 			a {
 				color: $black-color;
 				text-decoration: none;
 			}
 			i {
+				font-size: 20px;
 				margin-right: 2em;
 				&.fa-github {
 					&:hover {
@@ -100,10 +118,14 @@ section.about-wrapper {
 						color: #55acee;
 					}
 				}			
-			}				
+			}		
 		}
 	}	
 }
+
+// .contact-list ul li:nth-child(1) i:nth-child(1) {
+// 	color: red;
+// }
 
 // .my-work {
 // 	max-width: 30%;
