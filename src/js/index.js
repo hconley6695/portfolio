@@ -1,5 +1,5 @@
 // Javascript Entry Point
-// import jQuery from 'jquery'; 
+import jQuery from 'jquery'; 
 import bootstrap from 'bootstrap';
 
 // $('.milkninja').on('click', function() {
