@@ -10,7 +10,8 @@
   <div class="app container">
   	<header class="row">
   		<div class="col-md-3">
-  			<i class="fa fa-desktop border-top-radius" aria-hidden="true"></i>
+  			<img id="hc-logo" src="images/logo-hc.png" alt="logo" title="logo">
+  			<!-- <i class="fa fa-desktop border-top-radius" aria-hidden="true"></i> -->
   		</div>
   		<div class="col-md-9">
   			<h1 class="text-uppercase text-right">Heather Conley</h1>
@@ -31,52 +32,105 @@
 	  		</div>
 	  		<div class="row">
 	  			<div class="col-md-4 my-work">	
-	  				<img src="images/ninja-home-new2.jpg">
+	  				<img src="images/ninja-home-new2.jpg" alt="milk ninja logo" title="milk ninja logo" data-toggle="modal" data-target="#modal-milk-ninja">
 	  				<h4 class="text-uppercase"><a href="http://tinyurl.com/milkninja" target="_blank">Milk Ninja</a></h4>
 	  				<h6><a href="https://github.com/nursing-station/milk-ninja-js" target="_blank">https://github.com/nursing-station/milk-ninja-js</a></h6>
 
 	  			</div>
 
 	  			<div class="col-md-4 my-work">	
-	  				<img src="images/game-new2.jpg">
+	  				<img src="images/game-new2.jpg" alt="picture of cartoon turtle" title="animal action picture" data-toggle="modal" data-target="#modal-animal-action">
 	  				<h4 class="text-uppercase"><a href="http://tinyurl.com/hconley-animal-action" target="_blank">Animal Action</a></h4>
 	  				<h6><a href="https://github.com/hconley6695/Animal_Action" target="_blank">https://github.com/hconley6695/Animal_Action</a></h6>
 
 	  			</div>
 
 	  			<div class="col-md-4 my-work">	
-	  				<img src="images/boutique2.jpg">
+	  				<img src="images/boutique2.jpg" alt="women standing in colorful skirts" title="friendlily boutique" data-toggle="modal" data-target="#modal-friendlily">
 	  				<h4 class="text-uppercase"><a href="file:///Users/charlesconley/tiyprojects/boutique/index.html" target="_blank">Friendlily</a></h4>
 	  				<h6><a href="https://github.com/hconley6695/boutique" target="_blank">https://github.com/hconley6695/boutique</a></h6>
 
 	  			</div>
 	  		</div>
-	  		<!-- ///////////////////// -->
 
-	  		<!-- Button trigger modal -->
-			<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-			  Launch demo modal
-			</button>
-
-<!-- Modal -->
-			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<!-- Modal Milk Ninja-->
+			<div class="modal fade" id="modal-milk-ninja" tabindex="-1" role="dialog" aria-labelledby="modal-title-ninja">
 			  <div class="modal-dialog" role="document">
 			    <div class="modal-content">
 			      <div class="modal-header">
 			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-			        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+			        <h4 class="modal-title" id="modal-title-ninja">Milk Ninja</h4>
 			      </div>
 			      <div class="modal-body">
-			        Stuff in modal
+			        <p>This web application for mobile devices helps moms find and share locations where they can comfortably feed their ninjas, er, um...babies.
+					</p>
+					<p>Final Project at The Iron Yard. Contributed to the conception of the project, the layout of several pages, the components, and the geolocator request. This project is best viewed on a mobile at <a href="http://tinyurl.com/milkninja" target="_blank"> tinyurl.com/milkninja.</a></p>
+					<p>Languages and Libraries used: JavaScript, SASS, ReactJS</p>
+					<ul class="links">
+						<li><a href="http://tinyurl.com/milkninja" target="_blank">DEMO</a></li>
+						<li><a href="https://github.com/nursing-station/milk-ninja-js" target="_blank">CODE</a></li>
+					</ul>					
 			      </div>
 			      <div class="modal-footer">
 			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-			        <button type="button" class="btn btn-primary">Save changes</button>
 			      </div>
 			    </div>
 			  </div>
 			</div>
-<!-- /////////////////////////////////// -->
+
+<!-- Modal Animal Action -->
+			<div class="modal fade" id="modal-animal-action" tabindex="-1" role="dialog" aria-labelledby="modal-title-animal">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			        <h4 class="modal-title" id="modal-title-animal">Animal Action</h4>
+			      </div>
+			      <div class="modal-body">
+			        <p>A preschool game filled with animals and multiple-choice answers. Georgia Early Learning and Development Standards, CLL7.
+					</p>
+					<p>Languages and Libraries used: HTML, SASS, jQuery</p>
+					<p>Solo project.</p>
+
+					<ul class="links">
+						<li><a href="http://tiy-2016q1-charlesconley-game2.surge.sh" target="_blank">DEMO </a></li>
+						<li><a href="https://github.com/hconley6695/Animal_Action" target="_blank">CODE</a></li>
+					</ul>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+<!-- Modal Friendlily -->
+			<div class="modal fade" id="modal-friendlily" tabindex="-1" role="dialog" aria-labelledby="modal-title-friendlily">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			        <h4 class="modal-title" id="modal-title-friendlily">Friendlily</h4>
+			      </div>
+			      <div class="modal-body">
+			        <p>A splash page for a (fake) boutique.
+					</p>
+					<p>Languages used: HTML and CSS</p>
+					<p>Solo project.</p>
+
+					<ul class="links">
+						<li><a href="https://hconley6695.github.io/boutique/" target="_blank">DEMO </a></li>
+						<li><a href="https://github.com/hconley6695/boutique" target="_blank">CODE</a></li>
+					</ul>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+
   		</section>
 
   		<hr>
