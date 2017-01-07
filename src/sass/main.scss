@@ -72,6 +72,7 @@ p {
 
 #profile-pic {
 	max-width: 90%;
+	width: 190px;
 }
 
 section.about-wrapper {
@@ -117,4 +118,13 @@ section.about-wrapper {
 		}
 	}	
 }
+
+@media only screen and (max-width: 992px) {
+	.my-work img {
+		padding-left: 0;
+		cursor: pointer;
+	}
+}
+
+
 
