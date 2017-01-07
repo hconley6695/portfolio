@@ -119,5 +119,12 @@ section.about-wrapper {
 	}	
 }
 
+@media only screen and (max-width: 992px) {
+	.my-work img {
+		padding-left: 0;
+		cursor: pointer;
+	}
+}
+
 
 
