@@ -5,12 +5,13 @@
 @import 'font-awesome/scss/font-awesome';
 @import 'bootstrap/dist/css/bootstrap';
 
-$red-color: #b80f0a;
 $blue-color: #0000c7;
 $black-color: #201013;
 
+
 .container {
 	width: 960px;
+	font-family: 'Source Sans Pro', sans-serif;
 }
 
 #hc-logo {
@@ -21,12 +22,25 @@ $black-color: #201013;
 
 h1 {
 	letter-spacing: 0.1em;
+	color: $black-color;
+	font-weight: 400;
+
 }
 
-h3 {
-	margin-top: 10px;
+h3.job-title {
+	color: $black-color;
+	font-weight: 400;
+	text-align: right;
+	margin-top: 0;
 }
-h4 {
+
+h2 {
+	// margin-top: 10px;
+	color: $black-color;
+	font-weight: 400;
+
+}
+h3 {
 	text-align: center;
 }
 
@@ -36,7 +50,7 @@ h6 {
 	text-align: center;
 }
 
-h4 a {
+h3 a {
 	color: $black-color;
 	&:hover {
 		color: $blue-color;
@@ -66,13 +80,13 @@ p {
 }
 
 .my-work img {
-	padding-left: 5%;
 	cursor: pointer;
+	width: 400px;
 }
 
 #profile-pic {
 	max-width: 90%;
-	width: 190px;
+	width: 400px;
 }
 
 section.about-wrapper {
