@@ -83,6 +83,11 @@ p {
 	width: 400px;
 }
 
+.modal-body > p > span {
+	font-weight: bolder;
+	text-decoration: underline;
+}
+
 ul.links {
 	list-style: none;
 	a {

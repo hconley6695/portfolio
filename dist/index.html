@@ -8,6 +8,7 @@
   <title>Portfolio - Heather Conley</title>
   <script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
   <link rel="stylesheet" href="css/main.css">
+  <link rel="shortcut icon" href="/favicon.ico" type="/favicon.ico">
   <!-- Hotjar Tracking Code for www.tinyurl.com/heatherconley -->
 	<script>
 	    (function(h,o,t,j,a,r){
@@ -37,7 +38,9 @@
 
   	<main>
   		<div class="row">
+  			<!-- <div class="col-md-2 img-responsive"></div> -->
   			<img class="col-md-12 img-responsive" id="main-img" src="/images/computer_keys2.jpg">
+  			<!-- <div class="col-md-2 img-responsive"></div> -->
   		</div>
   		<section>
 	  		<div class="row">
@@ -45,19 +48,28 @@
 	  		</div>
 	  		<div class="row text-center">
 	  			<div class="col-md-4 col-sm-4 my-work">	
+	  				<img src="images/neighborhoodmap.png" alt="Atlanta map" title="Atlanta map" class="img-responsive" data-toggle="modal" data-target="#modal-neighborhood">
+	  				<h3 class="text-uppercase"><a href="https://hconley6695.github.io/neighborhood-map/" target="_blank">Atlanta Neighborhood Map</a></h3>
+	  				<h6><a href="https://github.com/hconley6695/neighborhood-map" target="_blank">https://github.com/hconley6695/neighborhood-map</a></h6>
+
+	  			</div>
+
+
+	  			<div class="col-md-4 col-sm-4 my-work">	
 	  				<img src="images/ninja-home-new2.jpg" alt="milk ninja logo" title="milk ninja logo" class="img-responsive" data-toggle="modal" data-target="#modal-milk-ninja">
 	  				<h3 class="text-uppercase"><a href="http://tinyurl.com/milkninja" target="_blank">Milk Ninja</a></h3>
 	  				<h6><a href="https://github.com/nursing-station/milk-ninja-js" target="_blank">https://github.com/nursing-station/milk-ninja-js</a></h6>
 
 	  			</div>
 
-	  			<div class="col-md-4 col-sm-4 my-work">	
+	  			<!-- <div class="col-md-4 col-sm-4 my-work">	
 	  				<img src="images/game-new2.jpg" alt="picture of cartoon turtle" title="animal action picture" class="img-responsive" data-toggle="modal" data-target="#modal-animal-action">
 	  				<h3 class="text-uppercase"><a href="http://tinyurl.com/hconley-animal-action" target="_blank">Animal Action</a></h3>
 	  				<h6><a href="https://github.com/hconley6695/Animal_Action" target="_blank">https://github.com/hconley6695/Animal_Action</a></h6>
 
 	  			</div>
-
+ -->
+ 				
 	  			<div class="col-md-4 col-sm-4 my-work">	
 	  				<img src="images/boutique2.jpg" alt="women standing in colorful skirts" title="friendlily boutique" class="img-responsive" data-toggle="modal" data-target="#modal-friendlily">
 	  				<h3 class="text-uppercase"><a href="https://hconley6695.github.io/boutique/" target="_blank">Friendlily</a></h3>
@@ -79,8 +91,9 @@
 			      <div class="modal-body">
 			        <p>This web application for mobile devices helps moms find and share locations where they can comfortably feed their ninjas, er, um...babies.
 					</p>
-					<p>Final Project at The Iron Yard. Contributed to the conception of the project, the layout of several pages, the components, and the geolocator request. This project is best viewed on a mobile at <a href="http://tinyurl.com/milkninja" target="_blank"> tinyurl.com/milkninja.</a></p>
+					<p>Final Project at The Iron Yard. Contributed to the conception of the project, the layout of several pages, the components, and the geolocator request. <span>This project is best viewed on a mobile phone at:  <a href="http://tinyurl.com/milkninja" target="_blank"> tinyurl.com/milkninja.</a></span></p>
 					<p>Languages and Libraries used: JavaScript, SASS, ReactJS</p>
+					<p>Username: Mary<br/>Password: password</p>
 					<ul class="links">
 						<li><a href="http://tinyurl.com/milkninja" target="_blank">DEMO</a></li>
 						<li><a href="https://github.com/nursing-station/milk-ninja-js" target="_blank">CODE</a></li>
@@ -94,7 +107,7 @@
 			</div>
 
 <!-- Modal Animal Action -->
-			<div class="modal fade" id="modal-animal-action" tabindex="-1" role="dialog" aria-labelledby="modal-title-animal">
+<!-- 			<div class="modal fade" id="modal-animal-action" tabindex="-1" role="dialog" aria-labelledby="modal-title-animal">
 			  <div class="modal-dialog" role="document">
 			    <div class="modal-content">
 			      <div class="modal-header">
@@ -110,6 +123,31 @@
 					<ul class="links">
 						<li><a href="http://tiy-2016q1-charlesconley-game2.surge.sh" target="_blank">DEMO </a></li>
 						<li><a href="https://github.com/hconley6695/Animal_Action" target="_blank">CODE</a></li>
+					</ul>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			      </div>
+			    </div>
+			  </div>
+			</div> -->
+
+			<div class="modal fade" id="modal-neighborhood" tabindex="-1" role="dialog" aria-labelledby="modal-title-neighborhood">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			        <h4 class="modal-title" id="modal-title-neighborhood">Atlanta Neighborhood Map</h4>
+			      </div>
+			      <div class="modal-body">
+			        <p>Web app that lists popular restaurants, shopping and sites in Atlanta.
+					</p>
+					<p>Languages and Libraries used: Javascript, CSS, HTML, Knockout.js, Google Map APIs, Foursquare API</p>
+					<p>Solo project.</p>
+
+					<ul class="links">
+						<li><a href="https://hconley6695.github.io/neighborhood-map/" target="_blank">DEMO </a></li>
+						<li><a href="https://github.com/hconley6695/neighborhood-map" target="_blank">CODE</a></li>
 					</ul>
 			      </div>
 			      <div class="modal-footer">
@@ -156,14 +194,17 @@
 	  			</div>		
 		  		<div class="row my-story">
 			  		<div class="col-md-9 col-sm-8">
-				  			<p>I am a former arts administrator embarking on a new journey in code. I am a graduate of The Iron Yard in Atlanta, GA, an immersive 12-week program, where I learned HTML5, CSS3, and JavaScript and worked with the jQuery and ReactJS libraries.  Currently, I am pursuing a Front End Engineering Nanodegree from Udacity to solidify my basic knowledge and to continue to grow.
+				  			<p>I am a former arts administrator who loves the creative outlet and problem solving that coding provides me.  I am currently employed at GetUWired, a marketing automation company where I am working on projects for small businesses across the United States using jQuery, PHP, WordPress and the Infusionsoft API. </p>
+				  			<p>
+							I am a graduate of The Iron Yard in Atlanta, GA, an immersive 12-week program, where I learned HTML5, CSS3, and JavaScript and worked with the jQuery and ReactJS libraries.  In my spare time, I pursued a Front End Engineering Nanodegree from Udacity to solidify my basic knowledge and to continue to grow. 
 				  			</p>
 				  			<p>
 							After being a power user of software in various jobs that I have held, I bring a different perspective to my UX development than others.  Websites, applications and software should have an intuitive end user experience, and my aim is to bring new ideas to the table while at the same time be mentored and guided by senior developers in my new career field.
 							</p>
 							<p>
-							When not punching away at the keyboard on my MacBook, I like to relax with my family and friends, to experiment with new recipes for dinner, to walk with my dog D’argo, and to travel to new places (Hawaii is next on the list!).
+							When not punching away at the keyboard on my MacBook, I like to relax with my family and friends, to experiment with new recipes for dinner, to walk with my dog D’argo, and to travel to new places.
 							</p>
+
 					</div>
 					<div class="col-md-3 col-sm-4">
 		 				<img class="img-responsive" id="profile-pic" src="images/heather014.JPG">
@@ -184,7 +225,7 @@
 						<li><i class="fa fa-phone"></i><a href="tel:16786973248">Call me at 678-697-3248</a></li>
 						<li><a class="social-a" href="https://github.com/hconley6695" target="_blank"><i class="fa fa-github"></i>See my code</a></li>
 						<li><a class="social-a" href="https://www.linkedin.com/in/heather-conley-5b5b881" target="_blank"><i class="fa fa-linkedin"></i>Connect with me on LinkedIn</a></li>
-						<li><a class="social-a" href="https://twitter.com/hconley6695" target="_blank"><i class="fa fa-twitter"></i>Follow me on Twitter</a></li>
+<!-- 						<li><a class="social-a" href="https://twitter.com/hconley6695" target="_blank"><i class="fa fa-twitter"></i>Follow me on Twitter</a></li> -->
 					</ul>
 				</div>
 		</section>
